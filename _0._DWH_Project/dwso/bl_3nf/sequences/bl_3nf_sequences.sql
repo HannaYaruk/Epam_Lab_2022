@@ -1,0 +1,98 @@
+--CREATE SEQUENCES FOR 3NF TABLES
+--drop SEQUENCE addresses_id_seq
+CREATE SEQUENCE addresses_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE categories_id_seq
+CREATE SEQUENCE categories_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE cities_id_seq 
+CREATE SEQUENCE cities_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE countries_id_seq
+CREATE SEQUENCE countries_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE customers_id_seq
+CREATE SEQUENCE customers_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE discounts_id_seq
+CREATE SEQUENCE discounts_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE employees_id_seq
+CREATE SEQUENCE employees_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE paym_types_id_seq
+CREATE SEQUENCE paym_types_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE payments_id_seq
+CREATE SEQUENCE payments_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE products_id_seq
+CREATE SEQUENCE products_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE regions_id_seq
+CREATE SEQUENCE regions_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--drop SEQUENCE warehouses_id_seq
+CREATE SEQUENCE warehouses_id_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE 
+NOCYCLE;
+
+--GRANT PRIVILEGIES ON SEQUENCES
+GRANT SELECT ON addresses_id_seq TO BL_CL;
+GRANT SELECT ON categories_id_seq TO BL_CL;
+GRANT SELECT ON cities_id_seq TO BL_CL;
+GRANT SELECT ON countries_id_seq TO BL_CL;
+GRANT SELECT ON customers_id_seq TO BL_CL;
+GRANT SELECT ON discounts_id_seq TO BL_CL;
+GRANT SELECT ON employees_id_seq TO BL_CL;
+GRANT SELECT ON paym_types_id_seq TO BL_CL;
+GRANT SELECT ON payments_id_seq TO BL_CL;
+GRANT SELECT ON products_id_seq TO BL_CL;
+GRANT SELECT ON regions_id_seq TO BL_CL;
+GRANT SELECT ON warehouses_id_seq TO BL_CL;

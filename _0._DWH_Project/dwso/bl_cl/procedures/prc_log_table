@@ -1,0 +1,41 @@
+--CREATE PROCEDURE FOR LOG_TABLE
+CREATE OR REPLACE NONEDITIONABLE PROCEDURE prc_log (
+    log_id       NUMBER,
+    process_name VARCHAR2,
+    tagret_table VARCHAR2,
+    message      VARCHAR2,
+    user_name    VARCHAR2,
+    user_win     VARCHAR2,
+    start_date   TIMESTAMP,
+    end_date     TIMESTAMP,
+    row_count    NUMBER
+) AS
+    PRAGMA autonomous_transaction;
+BEGIN
+    INSERT INTO log_table (
+        log_id,
+        process_name,
+        tagret_table,
+        message,
+        user_name,
+        user_win,
+        start_date,
+        end_date,
+        row_count
+    ) VALUES (
+        log_id_seq.NEXTVAL,
+        process_name,
+        tagret_table,
+        message,
+        user_name,
+        user_win,
+        start_date,
+        end_date,
+        row_count
+    );
+
+    COMMIT;
+EXCEPTION
+    WHEN OTHERS THEN
+        RAISE;
+END prc_log;

@@ -1,0 +1,17 @@
+1. RDS MYSQL
+Prepare the initial script in which you: 
+•	establish the connection to any of 1-2 provided mysql databases using your own user
+•	create a separate schema 
+•	create several objects in your schema -> at least table, view, procedure 
+•	this script should be restartable
+2. RDS AURORA
+•	Use Query editor to create several meaningful queries to the data in the Aurora db.
+•	Connect to the Aurora RDS from your PC using any SQL client
+•	Describe why it is the only way to connect to Aurora from local PC oppose to Amazon RDS MySQL. 
+3. DYNAMODB
+Add table in dynamodb using AWS Console and populate it manually. Make screenshots and delete it. Then use api calls from aws cli 
+•	Create table in AWS DynamoDb. Explain the choice of this primary key for the table
+•	Add 20+ rows to the table. 
+•	Retrieve 5+ rows from the table using keys. 
+•	Make several selects using syntax showed you on the lecture.
+•	Delete 2 rows from the table.

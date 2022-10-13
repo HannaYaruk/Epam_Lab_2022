@@ -1,0 +1,7 @@
+1. Create EC2 t2.micro instance with AWS_EC2_full_access_S3 role. Connect to the database from SQL client 
+2. Copy any file from S3 to EC2 using AWS_EC2_full_access_S3 role
+3. Create a snapshot of EC2 machine. 
+4. Raise a copy of the EC from AMI
+5. Create a web page
+6. Create Senseful CloudWatch Alarm for any event and create SNS notification to the email
+7. Create CloudFormation

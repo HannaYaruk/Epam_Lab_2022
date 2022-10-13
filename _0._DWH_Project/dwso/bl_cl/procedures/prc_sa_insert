@@ -1,0 +1,20 @@
+CREATE OR REPLACE PROCEDURE insert_3nf AS
+BEGIN
+    pkg_sa.prc_sa_country_regions_bel;
+    pkg_sa.prc_sa_country_shortnames_bel;
+    pkg_sa.prc_sa_cust_belg_src;
+    pkg_sa.prc_sa_discounts_src;
+    pkg_sa.prc_sa_emp_belg_src;
+    pkg_sa.prc_sa_paym_type_belg_src;
+    pkg_sa.prc_sa_paym_belg_src;
+    pkg_sa.prc_sa_product_belg_src;
+    pkg_sa.prc_sa_wareh_belg_src;
+    pkg_sa.prc_sa_cust_fra_src;
+    pkg_sa.prc_sa_emp_fra_src;
+    pkg_sa.prc_sa_paym_type_fra_src;
+    pkg_sa.prc_sa_paym_fra_src;
+    pkg_sa.prc_sa_product_fra_src;
+    pkg_sa.prc_sa_wareh_fra_src;
+END insert_3nf;
+
+EXECUTE insert_3nf;

@@ -1,0 +1,94 @@
+--drop table ce_payments_dd;
+CREATE TABLE ce_payments_dd (
+    employee_surr_id     NUMBER(38, 0) NOT NULL,
+    warehouse_surr_id    NUMBER(38, 0) NOT NULL,
+    address_surr_id      NUMBER(38, 0) NOT NULL,
+    payment_type_surr_id NUMBER(38, 0) NOT NULL,
+    customer_surr_id     NUMBER(38, 0) NOT NULL,
+    product_surr_id      NUMBER(38, 0) NOT NULL,
+    discount_surr_id     NUMBER(38, 0) NOT NULL,
+    quantity             NUMBER(38, 0) NOT NULL,
+    sale_date            DATE NOT NULL,
+    payment_src_id       NUMBER NOT NULL,
+    product_cost         NUMBER(8, 2) NOT NULL,
+    product_price        NUMBER(8, 2) NOT NULL,
+    update_dt            DATE DEFAULT current_date NOT NULL
+--    , FOREIGN KEY(EMPLOYEE_SURR_ID) REFERENCES CE_EMPLOYEES_SCD(EMPLOYEE_SURR_ID)
+    , constraint fk_warehouse FOREIGN KEY(WAREHOUSE_SURR_ID) REFERENCES CE_WAREHOUSES(WAREHOUSE_SURR_ID)
+    , constraint fk_address FOREIGN KEY(ADDRESS_SURR_ID) REFERENCES CE_ADDRESSES(ADDRESS_SURR_ID)
+    , constraint fk_payment_type FOREIGN KEY(PAYMENT_TYPE_SURR_ID) REFERENCES CE_PAYMENT_TYPES(PAYMENT_TYPE_SURR_ID)
+    , constraint fk_customer FOREIGN KEY(CUSTOMER_SURR_ID) REFERENCES CE_CUSTOMERS(CUSTOMER_SURR_ID)
+    , constraint fk_product FOREIGN KEY(PRODUCT_SURR_ID) REFERENCES CE_PRODUCTS(PRODUCT_SURR_ID)
+   , constraint fk_discount FOREIGN KEY(DISCOUNT_SURR_ID) REFERENCES CE_DISCOUNTS(DISCOUNT_SURR_ID)
+);
+
+ALTER TABLE ce_payments_dd MODIFY
+    PARTITION BY RANGE (
+        sale_date
+    )
+    ( PARTITION s1
+        VALUES LESS THAN ( TO_DATE('1-1-2020', 'DD-MM-YYYY') ),
+    PARTITION s2
+        VALUES LESS THAN ( TO_DATE('1-2-2020', 'DD-MM-YYYY') ),
+    PARTITION s3
+        VALUES LESS THAN ( TO_DATE('1-3-2020', 'DD-MM-YYYY') ),
+    PARTITION s4
+        VALUES LESS THAN ( TO_DATE('1-4-2020', 'DD-MM-YYYY') ),
+    PARTITION s5
+        VALUES LESS THAN ( TO_DATE('1-5-2020', 'DD-MM-YYYY') ),
+    PARTITION s6
+        VALUES LESS THAN ( TO_DATE('1-6-2020', 'DD-MM-YYYY') ),
+    PARTITION s7
+        VALUES LESS THAN ( TO_DATE('1-7-2020', 'DD-MM-YYYY') ),
+    PARTITION s8
+        VALUES LESS THAN ( TO_DATE('1-8-2020', 'DD-MM-YYYY') ),
+    PARTITION s9
+        VALUES LESS THAN ( TO_DATE('1-9-2020', 'DD-MM-YYYY') ),
+    PARTITION s10
+        VALUES LESS THAN ( TO_DATE('1-10-2020', 'DD-MM-YYYY') ),
+    PARTITION s11
+        VALUES LESS THAN ( TO_DATE('1-11-2020', 'DD-MM-YYYY') ),
+    PARTITION s12
+        VALUES LESS THAN ( TO_DATE('1-12-2020', 'DD-MM-YYYY') ),
+    PARTITION s13
+        VALUES LESS THAN ( TO_DATE('1-1-2021', 'DD-MM-YYYY') ),
+    PARTITION s14
+        VALUES LESS THAN ( TO_DATE('1-2-2021', 'DD-MM-YYYY') ),
+    PARTITION s15
+        VALUES LESS THAN ( TO_DATE('1-3-2021', 'DD-MM-YYYY') ),
+    PARTITION s16
+        VALUES LESS THAN ( TO_DATE('1-4-2021', 'DD-MM-YYYY') ),
+    PARTITION s17
+        VALUES LESS THAN ( TO_DATE('1-5-2021', 'DD-MM-YYYY') ),
+    PARTITION s18
+        VALUES LESS THAN ( TO_DATE('1-6-2021', 'DD-MM-YYYY') ),
+    PARTITION s19
+        VALUES LESS THAN ( TO_DATE('1-7-2021', 'DD-MM-YYYY') ),
+    PARTITION s20
+        VALUES LESS THAN ( TO_DATE('1-8-2021', 'DD-MM-YYYY') ),
+    PARTITION s21
+        VALUES LESS THAN ( TO_DATE('1-9-2021', 'DD-MM-YYYY') ),
+    PARTITION s22
+        VALUES LESS THAN ( TO_DATE('1-10-2021', 'DD-MM-YYYY') ),
+    PARTITION s23
+        VALUES LESS THAN ( TO_DATE('1-11-2021', 'DD-MM-YYYY') ),
+    PARTITION s24
+        VALUES LESS THAN ( TO_DATE('1-12-2021', 'DD-MM-YYYY') ),
+    PARTITION s25
+        VALUES LESS THAN ( TO_DATE('1-1-2022', 'DD-MM-YYYY') ),
+    PARTITION s26
+        VALUES LESS THAN ( TO_DATE('1-2-2022', 'DD-MM-YYYY') ),
+    PARTITION s27
+        VALUES LESS THAN ( TO_DATE('1-3-2022', 'DD-MM-YYYY') ),
+    PARTITION s28
+        VALUES LESS THAN ( TO_DATE('1-4-2022', 'DD-MM-YYYY') ),
+    PARTITION s29
+        VALUES LESS THAN (MAXVALUE)    
+    );
+
+SELECT
+    *
+FROM
+    user_tab_partitions;
+
+GRANT SELECT, INSERT, UPDATE ON ce_payments_dd TO bl_cl;

@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  EC2I3UXU3:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      AvailabilityZone: eu-central-1b
+      ImageId: ami-043d54474dae08421
+      SecurityGroupIds:
+        - sg-033758f5cb3c86c01
+        - sg-04263b4d0f2baa68e
+      KeyName: dilab-hanna-yaruk-instance-key
+      Tags:
+        -
+          Key: Name
+          Value: hanna-yaruk-cloudformation

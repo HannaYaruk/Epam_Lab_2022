@@ -1,0 +1,18 @@
+1. Login to Redshift 
+2. Provide data from data lake to Redshift by using COPY command. Check the initial compression types, distribution style, sort keys
+3. Identify compression types of the columns. b.	Create table without any compression applied and put there the same data as in previous table. 
+Identify best compression methods suggested by Redshift.Create table ***_analyzedcomp. Compare the size of the tables - compressed, decompressed and default compressed
+4. Prepare a stored procedure that will load your report. Describe the execution plan of this SELECT statement BEFORE optimization, log the time of query execution
+Describe why the result of the first execution is not the best one to compare with. Describe the existing distribution style of tables, its sort keys
+5. Optimize your distribution style and sort keys. Describe why you took a specific distribution style and sort keys. Describe the execution plan of this SELECT statement 
+AFTER optimization, log the time of query execution. Compare it with BEFORE results. Describe changes in execution plans and how your optimization impacted it. 
+6. Run the stored procedure using optimized tables and load data to your report.
+
+COPY QUESTION
+Run the statements in the example and run COPY statements in the example from s3 to created tables. Is there any difference in time of execution of these queries? Why?
+
+WORKING WITH EXTERNAL TABLES
+1.	Export any data which contain date column into S3 in a way
+2.	Create PARTITIONED external table  (partition by your_date_column)
+3.	Verify data in partitioned external table. Prepare the test script that will show 0 difference 
+4.	Examine explain with a WHERE clause containing the partition

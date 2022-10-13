@@ -1,0 +1,418 @@
+{
+    "hanna_yaruk_wines": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Chateau des Graves Blanc"
+                    },
+                    "Region": {
+                        "S": "Bordo"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Jean-Pierre Moueix Saint-Emilion"
+                    },
+                    "Region": {
+                        "S": "Bordo"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Red"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Grand Bateau Rouge"
+                    },
+                    "Region": {
+                        "S": "Bordo"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Red"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Clarendelle a par Haut-Brion Rose"
+                    },
+                    "Region": {
+                        "S": "Bordo"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Rose"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Beaujolais-Villages"
+                    },
+                    "Region": {
+                        "S": "Burgundy"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Red"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Macon-Villages"
+                    },
+                    "Region": {
+                        "S": "Burgundy"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Bourgogne Pinot Noir La Vignee"
+                    },
+                    "Region": {
+                        "S": "Burgundy"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Red"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Sauvignon Saint-Bris"
+                    },
+                    "Region": {
+                        "S": "Burgundy"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Gewurztraminer Jules Geyl"
+                    },
+                    "Region": {
+                        "S": "Alsace"
+                    },
+                    "Type": {
+                        "S": "Sweet"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Pinot Gris Les Elements"
+                    },
+                    "Region": {
+                        "S": "Alsace"
+                    },
+                    "Type": {
+                        "S": "Semi-dry"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Riesling"
+                    },
+                    "Region": {
+                        "S": "Alsace"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Belouve Rouge"
+                    },
+                    "Region": {
+                        "S": "Provence"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Red"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "By.Ott"
+                    },
+                    "Region": {
+                        "S": "Provence"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Rose"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Coeur du Rouet"
+                    },
+                    "Region": {
+                        "S": "Provence"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Rose"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Whispering Angel"
+                    },
+                    "Region": {
+                        "S": "Provence"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Rose"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Cotes du Rhone Rose"
+                    },
+                    "Region": {
+                        "S": "Rhone Valley"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Rose"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Cotes du Rhone Brunel de la Gardine"
+                    },
+                    "Region": {
+                        "S": "Rhone Valley"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Red"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Sancerre Rouge Les Baronnes"
+                    },
+                    "Region": {
+                        "S": "Loire Valley"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Red"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Petit Bourgeois Sauvignon"
+                    },
+                    "Region": {
+                        "S": "Loire Valley"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Sancerre Blanc Les Baronnes"
+                    },
+                    "Region": {
+                        "S": "Loire Valley"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Adimant Blanche"
+                    },
+                    "Region": {
+                        "S": "Languedoc and Roussillon"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "White"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "Le Grand Noir Grenache-Syrah-Mourvedre"
+                    },
+                    "Region": {
+                        "S": "Languedoc and Roussillon"
+                    },
+                    "Type": {
+                        "S": "Semi-dry"
+                    },
+                    "Colour": {
+                        "S": "Red"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Name": {
+                        "S": "La Cuvee Mythique Rose"
+                    },
+                    "Region": {
+                        "S": "Languedoc and Roussillon"
+                    },
+                    "Type": {
+                        "S": "Dry"
+                    },
+                    "Colour": {
+                        "S": "Rose"
+                    }
+                }
+            }
+        }
+    ]
+}

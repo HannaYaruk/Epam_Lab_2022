@@ -1,0 +1,6 @@
+1.	Establish connection to AWS account
+2.	Install AWS CLI on your local PC
+3.	Create bucket with recognizable naming
+4. Put files using api call from local PC to the Cloud
+5. Upload tables from previously created schema to S3 bucket with a predefined hierarchy
+6. Create Crawler, put tables into the Glue DataCatalog Database. Run select on the tables from s3 path. Show properties of the tables, query results
